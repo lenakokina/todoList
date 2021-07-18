@@ -1,0 +1,20 @@
+.todo-item {
+    padding: 3px;
+    margin: 2px;
+    border: 1px solid black;
+    cursor: pointer;
+    background-color: rgb(199, 115, 5);
+}
+.todo-item.done {
+    background-color: rgb(86, 121, 4);
+}
+.todo-item .delete-btn {
+    float: right;
+}
+
+#newTaskInput {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 400px;
+}
+

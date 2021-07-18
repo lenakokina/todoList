@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/sceleton.css">
+    <link rel="stylesheet" href="./css/dark.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" async></script>
+</head>
+<body>
+    <div id="listTodo"></div>
+
+    <form id="addTaskForm">
+        <div class="row">            
+                <input
+                    type="text"
+                    id="newTaskInput"
+                    class="u-full-width"/>                        
+            
+                <button type="submit" class="delete-btn">ADD</button>
+            
+        </div>
+    </form>
+
+    <!-- шаблонизация -->
+    
+    <script id="newTodoTemplate" type="text/template"> 
+        <div class="todo-item {{doneClass}}" data-todo-id = "{{id}}">
+            {{title}}
+            <span class="delete-btn">X</span>
+        </div>
+    </script>
+
+</body>
+</html>
